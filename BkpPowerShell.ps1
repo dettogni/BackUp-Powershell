@@ -64,7 +64,7 @@ $strFileName = $strFileName + "_" + $strDateCreate +".7z"
 
 Create-7zip $strSourceFolder $strFileName
 Write-Host "Fim da compressão dos arquivos"
-Write-Host "Movendo arquivo para: " -NoNewline -ForegroundColor "White"
+Write-Host "Movendo arquivo para:" -NoNewline -ForegroundColor "White"
 Write-Host $strDestinationFolder -ForegroundColor "Cyan"  
 Move-Item  $strFileName $strDestinationFolder
 
